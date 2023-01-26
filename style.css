@@ -1,0 +1,96 @@
+body{
+    background-color: gainsboro;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #FAA31E;
+    color: rgb(0, 0, 0);
+}
+.left img {
+    display: none;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.right {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    color: #FAA31E
+}
+.right img {
+    display: none;
+    border: 2px solid #FAA31E;
+    border-radius: 10%;
+}
+
+
+.ortala {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50px, -50px);
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-position: center;
+    border: 2px solid gainsboro;
+}
+
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+
+.expanding-hr {
+    width: 5px;
+    height: 0;
+    border-top: 2px solid black;
+    animation: expanding-hr 1s ease-out forwards;
+    display: none;
+}
+
+.hr_sol {
+    border-top: 2px solid black;
+}
+.hr_sag {
+    border-top: 2px solid #FAA31E;
+}
+
+@keyframes expanding-hr {
+    0% {
+        width: 5px;
+    }
+    100% {
+        width: 100px;
+    }
+}
